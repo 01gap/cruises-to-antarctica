@@ -1,0 +1,21 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: left;
+  background-color: $main-bg;
+  min-width: $mobile-min-width;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}

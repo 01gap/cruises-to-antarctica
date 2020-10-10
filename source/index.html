@@ -1,15 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page"lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Начало</title>
-    <!-- <link rel="preload" href="fonts/ptsans.woff2" as="font"> -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>Круизы в Антарктику</title>
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-600.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff2" as="font">
+    <link rel="stylesheet" href="css/styles.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
-  <body>
-    <header>
-      <p>Самое-самое начало. Пустые файлы scss, минимальная сборка gulp</p>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__logo-wrapper">
+        <img src="img/main-logo.svg" width="70" height="38" alt="Логотип Круизы в Антарктику">
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Преимущества</a></li>
+          <li class="main-nav__item"><a href="#">Направления</a></li>
+          <li class="main-nav__item"><a href="#">Ближайшие круизы</a></li>
+          <li class="main-nav__item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
+    <main class="page-main">
+      <div class="page-main banner-wrapper">
+        <div class="page-main__banner">
+          <h1 class="page-main__title">Круизы в Антарктику</h1>
+          <p class="page-main__subtitle">Волшебный мир айсбергов и пингвинов</p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
