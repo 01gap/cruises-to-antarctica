@@ -1,6 +1,11 @@
-$main-bg: #f9fbfd;
+$basic-light: #f9fbfd;
+$basic-dark: #011c40;
 
 $mobile-min-width: 320px;
 $mobile-max-width: 767px;
+$tablet-min-width: 768px;
 $tablet-max-width: 1023px;
 $desktop-max-width: 1366px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

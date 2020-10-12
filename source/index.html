@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html class="page"lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Круизы в Антарктику</title>
     <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-500.woff2" as="font">
     <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-600.woff2" as="font">
     <link rel="preload" href="fonts/montserrat-v15-latin_cyrillic-700.woff2" as="font">
     <link rel="stylesheet" href="css/styles.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__logo-wrapper">
-        <img src="img/main-logo.svg" width="70" height="38" alt="Логотип Круизы в Антарктику">
+        <img class="logo" src="img/main-logo.svg" width="70" height="38" alt="Логотип Круизы в Антарктику">
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list">
+      <nav class="page-header__main-nav page-header__main-nav--closed page-header__main-nav--no-js main-nav">
+        <button class="main-nav__toggle" aria-expanded="false" aria-controls="main-nav__list">
+          <svg class="main-nav__toggle-icon" aria-hidden="true">
+            <use class="main-nav__open-menu" xlink:href="img/sprite.svg#icon-open-menu"></use>
+            <use class="main-nav__close-menu" xlink:href="img/sprite.svg#icon-close-menu"></use>
+          </svg>
+        </button>
+        <ul class="main-nav__list" id="main-nav__list">
           <li class="main-nav__item"><a href="#">Преимущества</a></li>
           <li class="main-nav__item"><a href="#">Направления</a></li>
           <li class="main-nav__item"><a href="#">Ближайшие круизы</a></li>
@@ -25,7 +32,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main banner-wrapper">
+      <div class="page-main__banner-wrapper">
         <div class="page-main__banner">
           <h1 class="page-main__title">Круизы в Антарктику</h1>
           <p class="page-main__subtitle">Волшебный мир айсбергов и пингвинов</p>

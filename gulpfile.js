@@ -37,24 +37,24 @@ const images = () => {
 
 exports.images = images;
 
-// const sprite = () => {
-//   return gulp
-//     .src('source/img/icon-tick.svg')
-//     .pipe(
-//       imagemin([
-//         imagemin.svgo({
-//           plugins: [
-//             { removeViewBox: false },
-//             { removeAttrs: { attrs: '(fill)' }}
-//           ]
-//         })
-//       ])
-//     )
-//     .pipe(svgstore())
-//     .pipe(rename('sprite.svg'))
-//     .pipe(gulp.dest('build/img'));
-// };
-// exports.sprite = sprite;
+const sprite = () => {
+  return gulp
+    .src('source/img/icon-{open-menu,close-menu}.svg')
+    .pipe(
+      imagemin([
+        imagemin.svgo({
+          plugins: [
+            { removeViewBox: false },
+            { removeAttrs: { attrs: '(fill)' }}
+          ]
+        })
+      ])
+    )
+    .pipe(svgstore())
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
+};
+exports.sprite = sprite;
 
 const createWebp = () => {
   return gulp

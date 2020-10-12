@@ -1,0 +1,17 @@
+.logo {
+  @media (max-width: $tablet-max-width) {
+    width: 38px;
+    height: 20px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 42px;
+    height: 22px;
+    z-index: 2;
+    fill: $basic-dark;
+
+    polygon {
+      fill: $basic-dark;
+    }
+  }
+}
