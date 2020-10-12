@@ -3,6 +3,7 @@
 }
 
 .page__body {
+  display: flex;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   text-transform: none;
@@ -19,4 +20,11 @@
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+}
+
+@media (min-width: $beyond-desktop-width) {
+  .page__body {
+    max-width: $desktop-max-width;
+    margin: 0 auto;
+  }
 }

@@ -115,6 +115,7 @@ const build = gulp.series(
   copy,
   images,
   styles,
+  sprite
 );
 exports.build = build;
 
