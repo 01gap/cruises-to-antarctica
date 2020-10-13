@@ -1,0 +1,35 @@
+.advantages__inner {
+  min-height: 562px;
+  background-image: url("../img/bg-advantages-desktop.jpg");
+  background-size: cover;
+  background-color: #69656d;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-advantages-desktop@2x.jpg");
+  }
+
+  @media (max-width: $tablet-max-width) {
+    min-height: 588px;
+  }
+
+  @media (max-width: $tablet-min-width) {
+    background-image: url("../img/bg-advantages-tablet.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-advantages-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    min-height: 997px;
+  }
+
+  @media (max-width: $mobile-min-width) {
+    background-image: url("../img/bg-advantages-mobile.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-advantages-mobile@2x.jpg");
+    }
+  }
+
+}
