@@ -39,7 +39,7 @@ exports.images = images;
 
 const sprite = () => {
   return gulp
-    .src('source/img/icon-{open-menu,close-menu}.svg')
+    .src('source/img/icon-{open-menu,close-menu,fb,insta,twitter}.svg')
     .pipe(
       imagemin([
         imagemin.svgo({

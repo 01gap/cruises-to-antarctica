@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding-left: 103px;
   padding-right: 103px;
-  padding-top: 15px;
+  padding-top: 35px;
   z-index: 1;
 
   @media (max-width: $tablet-max-width) {
@@ -20,6 +20,10 @@
 }
 
 .page-header__main-nav {
+  align-self: center;
+}
+
+.page-header__logo {
   align-self: center;
 }
 
@@ -77,6 +81,10 @@
       display: flex;
       min-width: 100%;
       flex-direction: column;
+
+      a {
+        color: $basic-dark;
+      }
     }
 
     .main-nav__item + .main-nav__item {

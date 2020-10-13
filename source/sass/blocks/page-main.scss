@@ -1,5 +1,5 @@
 .page-main {
-  margin-top: -75px;
+  margin-top: -80px;
 
   @media (max-width: $tablet-max-width) {
     margin-top: -55px;
@@ -11,7 +11,7 @@
 }
 
 .page-main__banner-wrapper {
-  min-height: 650px;
+  height: 650px;
   background-image: url("../img/bg-top-desktop.jpg");
   background-size: cover;
   background-color: $basic-dark;
@@ -21,7 +21,7 @@
   }
 
   @media (max-width: $tablet-max-width) {
-    min-height: 638px;
+    height: 638px;
   }
 
   @media (max-width: $tablet-min-width) {
@@ -33,7 +33,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    min-height: 500px;
+    height: 500px;
   }
 
   @media (max-width: $mobile-min-width) {
@@ -47,8 +47,10 @@
 
 .page-main__banner {
   color: $basic-light;
+  box-sizing: border-box;
   padding-left: 198px;
   padding-top: 273px;
+  padding-bottom: 283px;
 
   @media (max-width: $tablet-max-width) {
     padding-left: 45px;

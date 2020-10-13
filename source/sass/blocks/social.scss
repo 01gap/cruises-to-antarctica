@@ -1,0 +1,33 @@
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__icon use {
+  fill: $basic-light;
+}
+
+.social__item + .social__item {
+  margin-left: 33px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-left: 23px;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .social__icon--fb {
+    width: 9px;
+    height: 16px;
+  }
+
+  .social__icon--insta {
+    width: 16px;
+    height: 16px;
+  }
+
+  .social__icon--twitter {
+    width: 16px;
+    height: 13px;
+  }
+}
