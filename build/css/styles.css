@@ -360,7 +360,7 @@ img {
   text-transform: none;
   font-weight: normal;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 24px;
   text-align: left;
   background-color: #f9fbfd;
   color: #011c40;
@@ -368,7 +368,10 @@ img {
   width: 100%;
   margin: 0;
   padding: 0;
-  min-height: 100%; }
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-rows: min-content 1fr min-content; }
 
 @media (min-width: 1367px) {
   .page__body {
@@ -703,23 +706,58 @@ img {
       padding-right: 15px; } }
 
 .intro__photo-wrapper {
-  min-width: 560px;
-  min-height: 301px;
-  margin-left: 88px; }
-  @media (max-width: 1023px) {
+  width: 50%;
+  height: 301px;
+  box-sizing: border-box;
+  padding-left: 20px; }
+  @media (max-width: 768px) {
     .intro__photo-wrapper {
-      min-width: 324px;
-      min-height: 264px;
-      margin-left: 30px; } }
+      height: 264px;
+      padding-left: 15px; } }
+  @media (max-width: 768px) {
+    .intro__photo-wrapper {
+      padding-left: 0; } }
 
 .intro__photo {
-  width: 560px; }
-  @media (max-width: 1023px) {
+  height: 301px;
+  width: 560px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+  @media (max-width: 768px) {
     .intro__photo {
-      width: 324px; } }
+      width: 324px;
+      height: 264px; } }
+
+.intro__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin: 0;
+  margin-bottom: 35px; }
+  @media (max-width: 1023px) {
+    .intro__title {
+      font-size: 26px;
+      line-height: 36px;
+      margin-bottom: 25px; } }
+  @media (max-width: 767px) {
+    .intro__title {
+      font-size: 24px;
+      line-height: 34px; } }
+
+.intro__text {
+  margin: 0; }
 
 .intro__text-wrapper {
-  width: 50%; }
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 68px;
+  align-self: center; }
+  @media (max-width: 768px) {
+    .intro__text-wrapper {
+      padding-right: 15px; } }
+  @media (max-width: 767px) {
+    .intro__text-wrapper {
+      padding-right: 0; } }
 
 .advantages__inner {
   min-height: 562px;
