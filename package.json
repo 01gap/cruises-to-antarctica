@@ -1,7 +1,7 @@
 {
-  "name": "travel-europe",
+  "name": "cruises-to-antarctica",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "description": "Круизы в Антарктику",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
