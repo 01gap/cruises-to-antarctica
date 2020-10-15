@@ -7,14 +7,16 @@
   padding-right: 103px;
 
   @media (max-width: $tablet-max-width) {
+    align-items: start;
     margin-top: 100px;
     margin-bottom: 100px;
     padding-left: 45px;
     padding-right: 45px;
   }
 
-  @media (max-width: $mobile-menu-max-width) {
+  @media (max-width: $mobile-max-width) {
     flex-direction: column;
+    align-items: center;
     margin-top: 65px;
     margin-bottom: 65px;
     padding-left: 15px;
@@ -27,17 +29,16 @@
   height: 301px;
   box-sizing: border-box;
   padding-left: 20px;
-  // margin-left: 88px;
 
-  @media (max-width: $tablet-min-width) {
-    // width: 324px;
+  @media (max-width: $tablet-max-width) {
     height: 264px;
     padding-left: 15px;
-    // margin-left: 30px;
   }
 
-  @media (max-width: $tablet-min-width) {
+  @media (max-width: $mobile-max-width) {
+    width: auto;
     padding-left: 0;
+    margin-top: 40px;
   }
 }
 
@@ -50,6 +51,11 @@
     width: 324px;
     height: 264px;
   }
+
+  @media (max-width: $mobile-max-width) {
+    width: 290px;
+    height: 186px;
+  }
 }
 
 .intro__title {
@@ -57,12 +63,14 @@
   font-size: 28px;
   line-height: 42px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 
   @media (max-width: $tablet-max-width) {
     font-size: 26px;
     line-height: 36px;
-    margin-bottom: 25px;
+    margin-top: -5px;
+    margin-bottom: 15px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -81,11 +89,17 @@
   padding-right: 68px;
   align-self: center;
 
-  @media (max-width: $tablet-min-width) {
+  @media (max-width: $tablet-max-width) {
     padding-right: 15px;
   }
 
   @media (max-width: $mobile-max-width) {
+    width: auto;
+    // max-width: 324px;
     padding-right: 0;
   }
+
+  // @media (max-width: $mobile-menu-max-width) {
+  //   max-width: none;
+  // }
 }
