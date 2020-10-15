@@ -792,12 +792,6 @@ img {
   @media (max-width: 1023px) {
     .advantages__inner {
       min-height: 588px; } }
-  @media (max-width: 768px) {
-    .advantages__inner {
-      background-image: url("../img/bg-advantages-tablet.jpg"); } }
-  @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 768px) and (min-resolution: 144dpi), (max-width: 768px) and (min-resolution: 1.5dppx) {
-    .advantages__inner {
-      background-image: url("../img/bg-advantages-tablet@2x.jpg"); } }
   @media (max-width: 767px) {
     .advantages__inner {
       background-image: url("../img/bg-advantages-tablet-no-frame.jpg"); } }
@@ -978,9 +972,13 @@ img {
 .cruises__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0; }
+  @media (max-width: 574px) {
+    .cruises__list {
+      flex-direction: column; } }
 
 .cruises__item {
   margin-bottom: 30px; }
@@ -992,22 +990,36 @@ img {
     .cruises__item:nth-child(odd) {
       margin-right: 30px; } }
 
+.cruise {
+  position: relative; }
+
 .cruise__text-wrapper {
   display: none;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 35px 25px;
+  padding-top: 70px;
   background-color: #011c40;
   color: #f9fbfd;
   width: 260px;
   min-height: 386px; }
+  @media (max-width: 1023px) {
+    .cruise__text-wrapper {
+      padding-left: 35px;
+      padding-right: 35px; } }
 
 .cruise__title {
+  position: absolute;
+  display: block;
+  bottom: 30px;
+  left: 30px;
   margin: 0;
   font-weight: 500;
   font-size: 18px;
-  line-height: 150%; }
+  line-height: 150%;
+  z-index: 2;
+  color: #f9fbfd; }
 
 .cruise__description dt {
   font-weight: 500;
@@ -1032,10 +1044,19 @@ img {
   padding-bottom: 15px;
   background-color: #f9fbfd;
   width: 210px; }
+  @media (max-width: 1023px) {
+    .cruise__book-button {
+      width: 239px; } }
 
 .cruise__photo-wrapper {
   width: 260px;
   height: 386px; }
+  @media (max-width: 1023px) {
+    .cruise__photo-wrapper {
+      width: 309px; } }
+  @media (max-width: 767px) {
+    .cruise__photo-wrapper {
+      width: 270px; } }
 
 .cruise__photo {
   height: 386px;
@@ -1049,3 +1070,143 @@ img {
 .cruise:hover .cruise__text-wrapper,
 .cruise:focus-within .cruise__text-wrapper {
   display: flex; }
+
+.cruise:hover .cruise__title {
+  bottom: none;
+  top: 35px;
+  left: 25px; }
+
+.early-booking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 555px;
+  background-image: url("../img/bg-early-booking-desktop.jpg");
+  background-size: cover;
+  background-color: #81b3d2;
+  margin-bottom: 120px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .early-booking {
+      background-image: url("../img/bg-early-booking-desktop@2x.jpg"); } }
+  @media (max-width: 1023px) {
+    .early-booking {
+      min-height: 805px;
+      margin-bottom: 100px; } }
+  @media (max-width: 767px) {
+    .early-booking {
+      background-image: url("../img/bg-early-booking-tablet-no-frame.jpg"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .early-booking {
+      background-image: url("../img/bg-early-booking-tablet-no-frame@2x.jpg"); } }
+  @media (max-width: 320px) {
+    .early-booking {
+      background-image: url("../img/bg-early-booking-mobile.jpg");
+      min-height: 760px;
+      margin-bottom: 65px; } }
+  @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 320px) and (min-resolution: 144dpi), (max-width: 320px) and (min-resolution: 1.5dppx) {
+    .early-booking {
+      background-image: url("../img/bg-early-booking-mobile@2x.jpg"); } }
+
+.early-booking__inner {
+  display: flex;
+  align-items: center;
+  padding-left: 163px;
+  padding-right: 163px; }
+  @media (max-width: 1023px) {
+    .early-booking__inner {
+      flex-direction: column; } }
+
+.early-booking__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  margin: 0; }
+  @media (max-width: 1023px) {
+    .early-booking__title {
+      font-size: 34px;
+      text-align: center; } }
+  @media (max-width: 767px) {
+    .early-booking__title {
+      font-size: 24px;
+      line-height: 130%; } }
+
+.early-booking__intro {
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0; }
+
+.early-booking__form {
+  background-color: #011c40;
+  color: #f9fbfd; }
+
+.early-booking__form-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 50px; }
+
+.early-booking__form-intro {
+  margin: 0;
+  margin-bottom: 30px;
+  width: 303px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%; }
+
+.form__textfield {
+  display: block;
+  width: 303px;
+  height: 43px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-left: 16px; }
+
+.form__textfield::-moz-placeholder {
+  color: #011c40;
+  opacity: 1; }
+
+.form__textfield::placeholder {
+  color: #011c40;
+  opacity: 1; }
+
+.form__checkbox-label {
+  position: relative;
+  padding-left: 24px;
+  font-size: 10px;
+  line-height: 130%; }
+
+.form__checkbox-label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #f9fbfd; }
+
+.form__checkbox-label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 10px;
+  height: 6px;
+  background-image: url("../img/icon-tick.svg");
+  opacity: 0; }
+
+.form__checkbox:checked + .form__checkbox-label::after {
+  opacity: 1; }
+
+.form__checkbox-wrapper {
+  margin-bottom: 20px; }
+
+.form__submit-button {
+  display: block;
+  border: none;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 303px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  background-color: #f9fbfd; }

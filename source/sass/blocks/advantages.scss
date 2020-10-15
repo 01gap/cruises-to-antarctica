@@ -26,14 +26,6 @@
     min-height: 588px;
   }
 
-  @media (max-width: $tablet-min-width) {
-    background-image: url("../img/bg-advantages-tablet.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-advantages-tablet@2x.jpg");
-    }
-  }
-
   @media (max-width: $mobile-max-width) {
       background-image: url("../img/bg-advantages-tablet-no-frame.jpg");
 

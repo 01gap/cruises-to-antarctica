@@ -1,0 +1,97 @@
+.early-booking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 555px;
+  background-image: url("../img/bg-early-booking-desktop.jpg");
+  background-size: cover;
+  background-color: #81b3d2;
+  margin-bottom: 120px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-early-booking-desktop@2x.jpg");
+  }
+
+  @media (max-width: $tablet-max-width) {
+    min-height: 805px;
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+      background-image: url("../img/bg-early-booking-tablet-no-frame.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-early-booking-tablet-no-frame@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-min-width) {
+    background-image: url("../img/bg-early-booking-mobile.jpg");
+    min-height: 760px;
+    margin-bottom: 65px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-early-booking-mobile@2x.jpg");
+    }
+  }
+}
+
+.early-booking__inner {
+  display: flex;
+  align-items: center;
+  padding-left: 163px;
+  padding-right: 163px;
+
+  @media (max-width: $tablet-max-width) {
+    flex-direction: column;
+
+  }
+}
+
+.early-booking__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  margin: 0;
+
+  @media (max-width: $tablet-max-width) {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 24px;
+    line-height: 130%;
+  }
+}
+
+.early-booking__intro {
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.early-booking__form {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // width: 403px;
+  background-color: $basic-dark;
+  color: $basic-light;
+}
+
+.early-booking__form-inner {
+  display: flex;
+  flex-direction: column;
+  // width: 303px;
+  padding: 50px;
+}
+
+.early-booking__form-intro {
+  margin: 0;
+  margin-bottom: 30px;
+  width: 303px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
