@@ -5,10 +5,10 @@
 .cruise__text-wrapper {
   display: none;
   flex-direction: column;
-  justify-content: space-between;
   box-sizing: border-box;
-  padding: 35px 25px;
+  padding: 30px 25px;
   padding-top: 70px;
+  padding-bottom: 10px;
   background-color: $basic-dark;
   color: $basic-light;
   width: 260px;
@@ -23,7 +23,7 @@
 .cruise__title {
   position: absolute;
   display: block;
-  bottom: 30px;
+  bottom: 20px;
   left: 30px;
   margin: 0;
   font-weight: 500;
@@ -44,7 +44,7 @@
     margin: 0;
     font-size: 14px;
     line-height: 140%;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 }
 
@@ -56,8 +56,8 @@
   font-size: 14px;
   line-height: 150%;
   text-align: center;
-  padding-top: 14px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 12px;
   background-color: $basic-light;
   width: 210px;
 
@@ -98,6 +98,20 @@
 
 .cruise:hover .cruise__title {
   bottom: none;
-  top: 35px;
+  top: 30px;
   left: 25px;
 }
+
+// .cruise:nth-child(2) .cruise__text-wrapper {
+//   display: flex;
+// }
+
+// .cruise:nth-child(2) .cruise__photo-wrapper {
+//   display: none;
+// }
+
+// .cruise:nth-child(2) .cruise__title {
+//   bottom: none;
+//   top: 30px;
+//   left: 25px;
+// }
