@@ -19,6 +19,15 @@
   font-weight: 500;
   line-height: 150%;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tablet-max-width) {
     font-size: 14px;
     line-height: 17px;

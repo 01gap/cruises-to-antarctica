@@ -1,4 +1,13 @@
 .logo {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tablet-max-width) {
     width: 38px;
     height: 20px;

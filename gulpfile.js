@@ -39,7 +39,7 @@ exports.images = images;
 
 const sprite = () => {
   return gulp
-    .src('source/img/icon-{open-menu,close-menu,fb,insta,twitter,liner,ticks,zodiac}.svg')
+    .src('source/img/icon-{open-menu,close-menu,fb,insta,twitter}.svg')
     .pipe(
       imagemin([
         imagemin.svgo({
@@ -58,7 +58,7 @@ exports.sprite = sprite;
 
 const createWebp = () => {
   return gulp
-    .src('source/img/**/*.{png,jpg}')
+    .src('source/img/map-*.jpg') // ('source/img/**/*.{png,jpg}')
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest('source/img'));
 };

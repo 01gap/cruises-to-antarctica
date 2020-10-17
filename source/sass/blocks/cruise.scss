@@ -36,7 +36,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  z-index: 2;
+  // z-index: 2;
   color: $basic-light;
 }
 
@@ -67,6 +67,7 @@
   padding-bottom: 12px;
   background-color: $basic-light;
   width: 210px;
+  z-index: 1;
 
   @media (max-width: $tablet-max-width) {
     width: 239px;
@@ -116,9 +117,20 @@
   display: flex;
 }
 
+.cruise:hover .cruise__book-button:hover,
+.cruise:hover .cruise__book-button:focus {
+  opacity: 0.8;
+  cursor: default;
+}
+
+.cruise:hover .cruise__book-button:active {
+  opacity: 0.5;
+  cursor: default;
+}
+
 .cruise:hover .cruise__title {
   bottom: none;
-  top: 30px;
+  top: 25px;
   left: 25px;
 
   @media (max-width: $tablet-max-width) {
@@ -140,7 +152,7 @@
 
 .cruise:nth-child(2) .cruise__title {
   bottom: none;
-  top: 30px;
+  top: 25px;
   left: 25px;
 
   @media (max-width: $tablet-max-width) {
