@@ -373,11 +373,6 @@ img {
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content; }
 
-@media (min-width: 1367px) {
-  .page__body {
-    max-width: 1366px;
-    margin: 0 auto; } }
-
 .logo:hover, .logo:focus {
   opacity: 0.8; }
 
@@ -551,10 +546,14 @@ img {
   height: 650px;
   background-image: url("../img/bg-top-desktop.jpg");
   background-size: cover;
+  background-position: 0 0;
   background-color: #011c40; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-main__banner-wrapper {
       background-image: url("../img/bg-top-desktop@2x.jpg"); } }
+  @media (min-width: 1367px) {
+    .page-main__banner-wrapper {
+      background-position: center; } }
   @media (max-width: 1023px) {
     .page-main__banner-wrapper {
       height: 638px; } }
@@ -705,6 +704,11 @@ img {
   margin-bottom: 120px;
   padding-left: 103px;
   padding-right: 103px; }
+  @media (min-width: 1367px) {
+    .intro {
+      max-width: 1366px;
+      margin-left: auto;
+      margin-right: auto; } }
   @media (max-width: 1023px) {
     .intro {
       align-items: start;
@@ -733,8 +737,9 @@ img {
   @media (max-width: 767px) {
     .intro__photo-wrapper {
       width: auto;
+      height: 186px;
       padding-left: 0;
-      margin-top: 40px; } }
+      margin-top: 30px; } }
 
 .intro__photo {
   height: 301px;
@@ -785,41 +790,37 @@ img {
       padding-right: 0; } }
 
 .advantages {
-  margin-bottom: 120px; }
-  @media (max-width: 1023px) {
-    .advantages {
-      margin-bottom: 100px; } }
-  @media (max-width: 574px) {
-    .advantages {
-      flex-direction: column;
-      margin-top: 65px;
-      margin-bottom: 65px; } }
-
-.advantages__inner {
+  margin-bottom: 110px;
   min-height: 562px;
   background-image: url("../img/bg-advantages-desktop.jpg");
   background-size: cover;
   background-color: #81b3d2; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .advantages__inner {
+    .advantages {
       background-image: url("../img/bg-advantages-desktop@2x.jpg"); } }
   @media (max-width: 1023px) {
-    .advantages__inner {
+    .advantages {
+      margin-bottom: 80px;
       min-height: 588px; } }
   @media (max-width: 767px) {
-    .advantages__inner {
+    .advantages {
       background-image: url("../img/bg-advantages-tablet-no-frame.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
-    .advantages__inner {
+    .advantages {
       background-image: url("../img/bg-advantages-tablet-no-frame@2x.jpg"); } }
+  @media (max-width: 574px) {
+    .advantages {
+      flex-direction: column;
+      margin-top: 65px;
+      margin-bottom: 55px; } }
   @media (max-width: 320px) {
-    .advantages__inner {
+    .advantages {
       min-height: 997px; } }
   @media (max-width: 320px) {
-    .advantages__inner {
+    .advantages {
       background-image: url("../img/bg-advantages-mobile.jpg"); } }
   @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 320px) and (min-resolution: 144dpi), (max-width: 320px) and (min-resolution: 1.5dppx) {
-    .advantages__inner {
+    .advantages {
       background-image: url("../img/bg-advantages-mobile@2x.jpg"); } }
 
 .advantages__title {
@@ -828,7 +829,7 @@ img {
   padding-bottom: 50px;
   font-weight: 600;
   font-size: 28px;
-  line-height: 42px;
+  line-height: 150%;
   text-align: center; }
   @media (max-width: 1023px) {
     .advantages__title {
@@ -839,10 +840,12 @@ img {
   @media (max-width: 767px) {
     .advantages__title {
       padding-top: 60px;
-      padding-bottom: 40px; } }
+      padding-bottom: 30px;
+      font-size: 24px; } }
 
 .advantages__list {
   display: flex;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -860,7 +863,7 @@ img {
       align-items: center;
       padding-left: 15px;
       padding-right: 15px;
-      padding-bottom: 40px; } }
+      padding-bottom: 30px; } }
 
 .advantages__item {
   position: relative;
@@ -942,7 +945,10 @@ img {
   font-size: 18px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 15px; }
+  margin-bottom: 10px; }
+  @media (max-width: 767px) {
+    .advantages__item-title {
+      width: 170px; } }
 
 .advantages__item-text {
   margin: 0;
@@ -954,7 +960,7 @@ img {
   fill: #011c40; }
 
 .cruises {
-  margin-bottom: 90px;
+  margin-bottom: 70px;
   padding-left: 118px;
   padding-right: 118px; }
   @media (max-width: 1023px) {
@@ -981,7 +987,7 @@ img {
   @media (max-width: 767px) {
     .cruises__title {
       font-size: 24px;
-      margin-bottom: 40px; } }
+      margin-bottom: 35px; } }
 
 .cruises__list {
   display: flex;
@@ -990,6 +996,10 @@ img {
   list-style: none;
   margin: 0 auto;
   padding: 0; }
+  @media (min-width: 1367px) {
+    .cruises__list {
+      max-width: 1366px;
+      margin: 0 auto; } }
   @media (max-width: 619px) {
     .cruises__list {
       flex-direction: column;
@@ -1043,23 +1053,31 @@ img {
   position: absolute;
   display: block;
   bottom: 20px;
-  left: 30px;
+  left: 35px;
   margin: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   color: #f9fbfd; }
+  @media (max-width: 1023px) {
+    .cruise__title {
+      bottom: 25px; } }
+  @media (max-width: 767px) {
+    .cruise__title {
+      bottom: 20px;
+      left: 25px; } }
 
 .cruise__description dt {
   font-weight: 500;
   font-size: 14px;
-  line-height: 140%; }
+  line-height: 140%;
+  padding-bottom: 5px; }
 
 .cruise__description dd {
   margin: 0;
   font-size: 14px;
   line-height: 140%;
-  padding-bottom: 15px; }
+  padding-bottom: 10px; }
 
 .cruise__book-button {
   display: block;
@@ -1160,13 +1178,17 @@ img {
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .early-booking {
       background-image: url("../img/bg-early-booking-desktop@2x.jpg"); } }
+  @media (min-width: 1367px) {
+    .early-booking {
+      background-position: center; } }
   @media (max-width: 1023px) {
     .early-booking {
       min-height: 805px;
       margin-bottom: 100px; } }
   @media (max-width: 767px) {
     .early-booking {
-      background-image: url("../img/bg-early-booking-tablet.jpg"); } }
+      background-image: url("../img/bg-early-booking-tablet.jpg");
+      background-size: bottom right; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .early-booking {
       background-image: url("../img/bg-early-booking-tablet@2x.jpg"); } }
@@ -1174,7 +1196,7 @@ img {
     .early-booking {
       background-image: url("../img/bg-early-booking-mobile.jpg");
       min-height: 760px;
-      margin-bottom: 65px; } }
+      margin-bottom: 55px; } }
   @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 320px) and (min-resolution: 144dpi), (max-width: 320px) and (min-resolution: 1.5dppx) {
     .early-booking {
       background-image: url("../img/bg-early-booking-mobile@2x.jpg"); } }
@@ -1187,6 +1209,7 @@ img {
   padding-right: 60px; }
   @media (max-width: 1023px) {
     .early-booking__inner {
+      justify-content: start;
       flex-direction: column; } }
   @media (max-width: 767px) {
     .early-booking__inner {
@@ -1201,7 +1224,7 @@ img {
     .early-booking__intro-inner {
       align-items: center;
       padding-right: 0;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
       width: 420px; } }
   @media (max-width: 767px) {
     .early-booking__intro-inner {
@@ -1213,15 +1236,19 @@ img {
   font-size: 40px;
   line-height: 150%;
   margin: 0;
-  margin-top: -20px; }
+  margin-top: -10px;
+  margin-bottom: 10px; }
   @media (max-width: 1023px) {
     .early-booking__title {
       font-size: 34px;
-      text-align: center; } }
+      text-align: center;
+      margin: 0; } }
   @media (max-width: 767px) {
     .early-booking__title {
       font-size: 24px;
-      line-height: 130%; } }
+      line-height: 130%;
+      margin-top: -10px;
+      margin-bottom: 10px; } }
 
 .early-booking__intro {
   font-size: 18px;
@@ -1244,14 +1271,16 @@ img {
 .early-booking__form-inner {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   padding: 50px; }
   @media (max-width: 574px) {
     .early-booking__form-inner {
-      padding: 40px 30px; } }
+      padding: 40px 30px;
+      padding-top: 30px; } }
 
 .early-booking__form-intro {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 303px;
   font-weight: 500;
   font-size: 18px;
@@ -1260,19 +1289,21 @@ img {
     .early-booking__form-intro {
       width: 230px;
       line-height: 25.2px;
-      text-align: center; } }
+      text-align: center;
+      margin-bottom: 30px; } }
 
 .form__textfield {
   display: block;
   width: 303px;
   height: 43px;
   box-sizing: border-box;
+  border: none;
   margin-bottom: 20px;
   padding-left: 16px;
   font-size: 14px;
   line-height: 21px; }
   .form__textfield:hover, .form__textfield:focus {
-    opacity: 0.8; }
+    background-color: #dbeafe; }
   @media (max-width: 574px) {
     .form__textfield {
       width: 230px; } }
@@ -1363,6 +1394,12 @@ img {
   padding-left: 103px;
   padding-right: 103px;
   margin-bottom: 120px; }
+  @media (min-width: 1367px) {
+    .contacts {
+      max-width: 1366px;
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto; } }
   @media (max-width: 1023px) {
     .contacts {
       padding-left: 45px;
@@ -1373,14 +1410,21 @@ img {
       flex-direction: column;
       padding-left: 15px;
       padding-right: 15px;
-      margin-bottom: 65px; } }
+      margin-bottom: 45px; } }
 
 .contacts__text-wrapper {
   order: 1;
-  width: 50%; }
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 80px; }
+  @media (max-width: 1023px) {
+    .contacts__text-wrapper {
+      padding-left: 15px; } }
   @media (max-width: 767px) {
     .contacts__text-wrapper {
-      order: 0; } }
+      order: 0;
+      width: auto;
+      padding-left: 0; } }
 
 .contacts__map-wrapper {
   width: 50%;
@@ -1400,12 +1444,12 @@ img {
 .contacts__map {
   width: 560px;
   height: 306px;
-  -o-object-fit: cover;
-     object-fit: cover; }
+  -o-object-fit: bottom;
+     object-fit: bottom; }
   @media (max-width: 768px) {
     .contacts__map {
       width: 324px;
-      height: 335x; } }
+      height: 335px; } }
   @media (max-width: 767px) {
     .contacts__map {
       width: 290px;
@@ -1415,12 +1459,17 @@ img {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 30px; }
+  @media (max-width: 767px) {
+    .contacts__intro {
+      margin-bottom: 20px; } }
 
 .contacts__address {
   position: relative;
   padding-left: 30px;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 20px; }
   .contacts__address::before {
     position: absolute;
     content: "";

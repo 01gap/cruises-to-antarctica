@@ -31,13 +31,22 @@
   position: absolute;
   display: block;
   bottom: 20px;
-  left: 30px;
+  left: 35px;
   margin: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   // z-index: 2;
   color: $basic-light;
+
+  @media (max-width: $tablet-max-width) {
+    bottom: 25px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    bottom: 20px;
+    left: 25px;
+  }
 }
 
 .cruise__description {
@@ -45,13 +54,14 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 140%;
+    padding-bottom: 5px;
   }
 
   dd {
     margin: 0;
     font-size: 14px;
     line-height: 140%;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
 }
 

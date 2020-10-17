@@ -3,20 +3,29 @@
   width: 303px;
   height: 43px;
   box-sizing: border-box;
+  border: none;
   margin-bottom: 20px;
   padding-left: 16px;
   font-size: 14px;
   line-height: 21px;
 
+  // &--email {
+  //   margin-bottom: 10px;
+  // }
+
   &:hover,
   &:focus {
-    opacity: 0.8;
+    background-color:  lighten($basic-dark, 80%);
   }
 
   @media (max-width: $mobile-menu-max-width) {
     width: 230px;
   }
 }
+
+// .form__textfield--email {
+//   margin-bottom: 10px;
+// }
 
 .form__textfield::placeholder {
   color: $basic-dark;

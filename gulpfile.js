@@ -58,7 +58,7 @@ exports.sprite = sprite;
 
 const createWebp = () => {
   return gulp
-    .src('source/img/map-*.jpg') // ('source/img/**/*.{png,jpg}')
+    .src('source/img/leonor-desktop@2x.jpg') // ('source/img/**/*.{png,jpg}')
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest('source/img'));
 };

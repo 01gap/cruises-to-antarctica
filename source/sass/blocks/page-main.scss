@@ -14,10 +14,15 @@
   height: 650px;
   background-image: url("../img/bg-top-desktop.jpg");
   background-size: cover;
+  background-position: 0 0;
   background-color: $basic-dark;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-top-desktop@2x.jpg");
+  }
+
+  @media (min-width: $beyond-desktop-width) {
+    background-position: center;
   }
 
   @media (max-width: $tablet-max-width) {
