@@ -107,6 +107,10 @@
       min-width: 100%;
       flex-direction: column;
       background-color: $basic-light;
+
+      a {
+        color: $basic-dark;
+      }
     }
 
     .main-nav__item + .main-nav__item {

@@ -26,7 +26,7 @@
     background-size: bottom right;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/bg-early-booking-tablet@2x.jpg");
+      background-image: url("../img/bg-early-booking-tablet@2x.jpg");
     }
   }
 
@@ -118,10 +118,6 @@
 }
 
 .early-booking__form {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // width: 403px;
   background-color: $basic-dark;
   color: $basic-light;
 }
@@ -130,9 +126,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  // min-height: 455px;
   padding: 50px;
-  // padding-top: 40px;
 
   @media (max-width: $mobile-menu-max-width) {
     padding: 40px 30px;

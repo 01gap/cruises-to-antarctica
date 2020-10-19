@@ -9,10 +9,6 @@
   font-size: 14px;
   line-height: 21px;
 
-  // &--email {
-  //   margin-bottom: 10px;
-  // }
-
   &:hover,
   &:focus {
     background-color:  lighten($basic-dark, 80%);
@@ -22,10 +18,6 @@
     width: 230px;
   }
 }
-
-// .form__textfield--email {
-//   margin-bottom: 10px;
-// }
 
 .form__textfield::placeholder {
   color: $basic-dark;

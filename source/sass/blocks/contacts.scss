@@ -65,7 +65,7 @@
 .contacts__map {
   width: 560px;
   height: 306px;
-  object-fit: bottom;
+  object-fit: cover;
 
   @media (max-width: $tablet-min-width) {
     width: 324px;
@@ -117,6 +117,7 @@
   a {
     text-decoration: none;
     color: inherit;
+
     &:hover,
     &:focus {
       background-color: rgba($basic-dark, 0.2);

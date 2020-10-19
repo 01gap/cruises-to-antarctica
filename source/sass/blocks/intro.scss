@@ -1,6 +1,5 @@
 .intro {
   display: flex;
-  // justify-content: space-between;
   margin-top: 120px;
   margin-bottom: 120px;
   padding-left: 103px;
@@ -102,11 +101,6 @@
 
   @media (max-width: $mobile-max-width) {
     width: auto;
-    // max-width: 324px;
     padding-right: 0;
   }
-
-  // @media (max-width: $mobile-menu-max-width) {
-  //   max-width: none;
-  // }
 }
