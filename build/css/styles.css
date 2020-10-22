@@ -1097,7 +1097,8 @@ img {
   padding-bottom: 12px;
   background-color: #f9fbfd;
   width: 210px;
-  z-index: 1; }
+  z-index: 1;
+  cursor: pointer; }
   @media (max-width: 1023px) {
     .cruise__book-button {
       width: 239px; } }
@@ -1137,12 +1138,10 @@ img {
 
 .cruise:hover .cruise__book-button:hover,
 .cruise:hover .cruise__book-button:focus {
-  opacity: 0.8;
-  cursor: default; }
+  opacity: 0.8; }
 
 .cruise:hover .cruise__book-button:active {
-  opacity: 0.5;
-  cursor: default; }
+  opacity: 0.5; }
 
 .cruise:hover .cruise__title {
   bottom: none;
@@ -1281,38 +1280,39 @@ img {
       text-align: center;
       margin-bottom: 30px; } }
 
-.form__textfield {
+.form > input {
   display: block;
   width: 303px;
   height: 43px;
   box-sizing: border-box;
   border: none;
+  border-radius: 0;
   margin-bottom: 20px;
   padding-left: 16px;
   font-size: 14px;
   line-height: 21px; }
-  .form__textfield:hover, .form__textfield:focus {
+  .form > input:hover, .form > input:focus {
     background-color: #dbeafe; }
   @media (max-width: 574px) {
-    .form__textfield {
+    .form > input {
       width: 230px; } }
 
-.form__textfield::-moz-placeholder {
+.form > input::-moz-placeholder {
   color: #011c40;
   opacity: 1; }
 
-.form__textfield::placeholder {
+.form > input::placeholder {
   color: #011c40;
   opacity: 1; }
 
-.form__checkbox-label {
+.form__checkbox-wrapper label {
   position: relative;
   padding-left: 24px;
   font-size: 10px;
   line-height: 130%;
   cursor: pointer; }
 
-.form__checkbox-label::before {
+.form__checkbox-wrapper label::before {
   content: "";
   position: absolute;
   top: -2px;
@@ -1322,12 +1322,12 @@ img {
   background-color: #f9fbfd;
   cursor: pointer; }
   @media (max-width: 574px) {
-    .form__checkbox-label::before {
+    .form__checkbox-wrapper label::before {
       top: 2px;
       width: 20px;
       height: 20px; } }
 
-.form__checkbox-label::after {
+.form__checkbox-wrapper label::after {
   content: "";
   position: absolute;
   top: 4px;
@@ -1337,18 +1337,8 @@ img {
   background-image: url("../img/icon-tick.svg");
   opacity: 0; }
   @media (max-width: 574px) {
-    .form__checkbox-label::after {
+    .form__checkbox-wrapper label::after {
       top: 8px; } }
-
-.form__checkbox:checked + .form__checkbox-label::after {
-  opacity: 1; }
-
-.form__checkbox:hover + .form__checkbox-label::before,
-.form__checkbox:focus + .form__checkbox-label::before {
-  opacity: 0.8; }
-
-.form__checkbox:active + .form__checkbox-label::before {
-  opacity: 0.5; }
 
 .form__checkbox-wrapper {
   margin-bottom: 20px; }
@@ -1356,8 +1346,15 @@ img {
     .form__checkbox-wrapper {
       display: flex;
       width: 230px; } }
+  .form__checkbox-wrapper input:checked + label::after {
+    opacity: 1; }
+  .form__checkbox-wrapper input:hover + label::before,
+  .form__checkbox-wrapper input:focus + label::before {
+    opacity: 0.8; }
+  .form__checkbox-wrapper input:active + label::before {
+    opacity: 0.5; }
 
-.form__submit-button {
+.form button {
   display: block;
   border: none;
   padding: 0;
@@ -1367,13 +1364,14 @@ img {
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
-  background-color: #f9fbfd; }
-  .form__submit-button:hover, .form__submit-button:focus {
+  background-color: #f9fbfd;
+  cursor: pointer; }
+  .form button:hover, .form button:focus {
     opacity: 0.8; }
-  .form__submit-button:active {
+  .form button:active {
     opacity: 0.5; }
   @media (max-width: 574px) {
-    .form__submit-button {
+    .form button {
       width: 230px; } }
 
 .contacts {

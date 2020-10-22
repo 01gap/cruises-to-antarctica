@@ -20,7 +20,7 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-advantages-tablet-no-frame@2x.jpg");
     }
-}
+  }
 
   @media (max-width: $mobile-menu-max-width) {
     flex-direction: column;

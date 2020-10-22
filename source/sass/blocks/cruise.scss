@@ -81,6 +81,7 @@
   background-color: $basic-light;
   width: 210px;
   z-index: 1;
+  cursor: pointer;
 
   @media (max-width: $tablet-max-width) {
     width: 239px;
@@ -131,12 +132,10 @@
 .cruise:hover .cruise__book-button:hover,
 .cruise:hover .cruise__book-button:focus {
   opacity: 0.8;
-  cursor: default;
 }
 
 .cruise:hover .cruise__book-button:active {
   opacity: 0.5;
-  cursor: default;
 }
 
 .cruise:hover .cruise__title {
