@@ -397,7 +397,8 @@ img {
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  padding-left: 70px; }
 
 .main-nav__list a {
   color: #f9fbfd; }
@@ -429,7 +430,7 @@ img {
     margin-left: 0;
     margin-top: 17px; } }
 
-@media (max-width: 574px) {
+@media (max-width: 767px) {
   .main-nav__toggle-icon {
     display: block;
     width: 24px;
@@ -450,6 +451,37 @@ img {
     line-height: 15px; } }
 
 .page-header {
+  height: 650px;
+  background-image: url("../img/bg-top-desktop.jpg");
+  background-size: cover;
+  background-position: 0 0;
+  background-color: #011c40; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/bg-top-desktop@2x.jpg"); } }
+  @media (min-width: 1367px) {
+    .page-header {
+      background-position: center; } }
+  @media (max-width: 1023px) {
+    .page-header {
+      height: 638px; } }
+  @media (max-width: 768px) {
+    .page-header {
+      background-image: url("../img/bg-top-tablet.jpg"); } }
+  @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 768px) and (min-resolution: 144dpi), (max-width: 768px) and (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/bg-top-tablet@2x.jpg"); } }
+  @media (max-width: 767px) {
+    .page-header {
+      height: 500px; } }
+  @media (max-width: 320px) {
+    .page-header {
+      background-image: url("../img/bg-top-mobile.jpg"); } }
+  @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 320px) and (min-resolution: 144dpi), (max-width: 320px) and (min-resolution: 1.5dppx) {
+    .page-header {
+      background-image: url("../img/bg-top-mobile@2x.jpg"); } }
+
+.page-header__inner {
   display: flex;
   justify-content: space-between;
   padding-left: 103px;
@@ -457,12 +489,12 @@ img {
   padding-top: 35px;
   z-index: 1; }
   @media (max-width: 1023px) {
-    .page-header {
+    .page-header__inner {
       padding-left: 45px;
       padding-right: 45px;
       padding-top: 25px; } }
   @media (max-width: 767px) {
-    .page-header {
+    .page-header__inner {
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 20px; } }
@@ -473,8 +505,49 @@ img {
 .page-header__logo {
   align-self: center; }
 
-@media (max-width: 574px) {
-  .page-header {
+.page-header__text-wrapper {
+  color: #f9fbfd;
+  box-sizing: border-box;
+  padding-left: 200px;
+  padding-top: 190px; }
+  @media (max-width: 1023px) {
+    .page-header__text-wrapper {
+      padding-left: 45px; } }
+  @media (max-width: 767px) {
+    .page-header__text-wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 180px; } }
+
+.page-header__title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px; }
+  @media (max-width: 1023px) {
+    .page-header__title {
+      font-size: 50px;
+      line-height: 61px; } }
+  @media (max-width: 767px) {
+    .page-header__title {
+      font-size: 36px;
+      line-height: 45px; } }
+
+.page-header__subtitle {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px; }
+  @media (max-width: 1023px) {
+    .page-header__subtitle {
+      font-size: 18px;
+      line-height: 22px; } }
+  @media (max-width: 767px) {
+    .page-header__subtitle {
+      font-size: 16px; } }
+
+@media (max-width: 767px) {
+  .page-header__inner {
     flex-direction: column;
     align-items: flex-start;
     padding: 0; }
@@ -537,92 +610,6 @@ img {
       padding-bottom: 50px; }
     .page-header__main-nav--no-js .main-nav__toggle {
       display: none; } }
-
-.page-main {
-  margin-top: -80px; }
-  @media (max-width: 1023px) {
-    .page-main {
-      margin-top: -55px; } }
-
-.page-main__banner-wrapper {
-  height: 650px;
-  background-image: url("../img/bg-top-desktop.jpg");
-  background-size: cover;
-  background-position: 0 0;
-  background-color: #011c40; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .page-main__banner-wrapper {
-      background-image: url("../img/bg-top-desktop@2x.jpg"); } }
-  @media (min-width: 1367px) {
-    .page-main__banner-wrapper {
-      background-position: center; } }
-  @media (max-width: 1023px) {
-    .page-main__banner-wrapper {
-      height: 638px; } }
-  @media (max-width: 768px) {
-    .page-main__banner-wrapper {
-      background-image: url("../img/bg-top-tablet.jpg"); } }
-  @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 768px) and (min-resolution: 144dpi), (max-width: 768px) and (min-resolution: 1.5dppx) {
-    .page-main__banner-wrapper {
-      background-image: url("../img/bg-top-tablet@2x.jpg"); } }
-  @media (max-width: 767px) {
-    .page-main__banner-wrapper {
-      height: 500px; } }
-  @media (max-width: 320px) {
-    .page-main__banner-wrapper {
-      background-image: url("../img/bg-top-mobile.jpg"); } }
-  @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 320px) and (min-resolution: 144dpi), (max-width: 320px) and (min-resolution: 1.5dppx) {
-    .page-main__banner-wrapper {
-      background-image: url("../img/bg-top-mobile@2x.jpg"); } }
-
-.page-main__banner {
-  color: #f9fbfd;
-  box-sizing: border-box;
-  padding-left: 198px;
-  padding-top: 273px;
-  padding-bottom: 283px; }
-  @media (max-width: 1023px) {
-    .page-main__banner {
-      padding-left: 45px; } }
-  @media (max-width: 767px) {
-    .page-main__banner {
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-top: 180px; } }
-
-.page-main__title {
-  margin: 0;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 66px; }
-  @media (max-width: 1023px) {
-    .page-main__title {
-      font-size: 50px;
-      line-height: 61px; } }
-  @media (max-width: 767px) {
-    .page-main__title {
-      font-size: 36px;
-      line-height: 45px; } }
-
-.page-main__subtitle {
-  margin: 0;
-  font-size: 20px;
-  line-height: 24px; }
-  @media (max-width: 1023px) {
-    .page-main__subtitle {
-      font-size: 18px;
-      line-height: 22px; } }
-  @media (max-width: 767px) {
-    .page-main__subtitle {
-      font-size: 16px; } }
-
-@media (max-width: 574px) {
-  .page-main {
-    margin-top: -50px; }
-  .page-main--no-js,
-  .page-main--menu-opened {
-    margin-top: 0; } }
 
 .page-footer {
   display: flex;
@@ -1143,15 +1130,18 @@ img {
 .cruise:hover .cruise__book-button:active {
   opacity: 0.5; }
 
-.cruise:hover .cruise__title {
+.cruise:hover .cruise__title,
+.cruise:focus-within .cruise__title {
   bottom: none;
   top: 25px;
   left: 25px; }
   @media (max-width: 1023px) {
-    .cruise:hover .cruise__title {
+    .cruise:hover .cruise__title,
+    .cruise:focus-within .cruise__title {
       left: 35px; } }
   @media (max-width: 767px) {
-    .cruise:hover .cruise__title {
+    .cruise:hover .cruise__title,
+    .cruise:focus-within .cruise__title {
       left: 25px; } }
 
 .early-booking {

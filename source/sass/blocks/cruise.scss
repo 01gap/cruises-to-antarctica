@@ -138,7 +138,8 @@
   opacity: 0.5;
 }
 
-.cruise:hover .cruise__title {
+.cruise:hover .cruise__title,
+.cruise:focus-within .cruise__title {
   bottom: none;
   top: 25px;
   left: 25px;

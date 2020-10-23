@@ -1,109 +1,19 @@
-.page-main {
-  margin-top: -80px;
+// .page-main {
+//   margin-top: -280px;
 
-  @media (max-width: $tablet-max-width) {
-    margin-top: -55px;
-  }
-}
+//   @media (max-width: $tablet-max-width) {
+//     margin-top: -155px;
+//   }
+// }
 
-.page-main__banner-wrapper {
-  height: 650px;
-  background-image: url("../img/bg-top-desktop.jpg");
-  background-size: cover;
-  background-position: 0 0;
-  background-color: $basic-dark;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-top-desktop@2x.jpg");
-  }
+// @media (max-width: $mobile-max-width) {
+//   .page-main {
+//     margin-top: -50px;
+//   }
 
-  @media (min-width: $beyond-desktop-width) {
-    background-position: center;
-  }
-
-  @media (max-width: $tablet-max-width) {
-    height: 638px;
-  }
-
-  @media (max-width: $tablet-min-width) {
-    background-image: url("../img/bg-top-tablet.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-top-tablet@2x.jpg");
-    }
-  }
-
-  @media (max-width: $mobile-max-width) {
-    height: 500px;
-  }
-
-  @media (max-width: $mobile-min-width) {
-    background-image: url("../img/bg-top-mobile.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-top-mobile@2x.jpg");
-    }
-  }
-}
-
-.page-main__banner {
-  color: $basic-light;
-  box-sizing: border-box;
-  padding-left: 198px;
-  padding-top: 273px;
-  padding-bottom: 283px;
-
-  @media (max-width: $tablet-max-width) {
-    padding-left: 45px;
-  }
-
-  @media (max-width: $mobile-max-width) {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 180px;
-  }
-}
-
-.page-main__title {
-  margin: 0;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 66px;
-
-  @media (max-width: $tablet-max-width) {
-    font-size: 50px;
-    line-height: 61px;
-  }
-
-  @media (max-width: $mobile-max-width) {
-    font-size: 36px;
-    line-height: 45px;
-  }
-}
-
-.page-main__subtitle {
-  margin: 0;
-  font-size: 20px;
-  line-height: 24px;
-
-  @media (max-width: $tablet-max-width) {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  @media (max-width: $mobile-max-width) {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: $mobile-menu-max-width) {
-  .page-main {
-    margin-top: -50px;
-  }
-
-  .page-main--no-js,
-  .page-main--menu-opened {
-    margin-top: 0;
-  }
-}
+//   .page-main--no-js,
+//   .page-main--menu-opened {
+//     margin-top: 0;
+//   }
+// }

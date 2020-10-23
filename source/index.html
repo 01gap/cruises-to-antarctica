@@ -12,32 +12,34 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a>
-        <svg class="page-header__logo page-header__logo--no-js logo" width="70" height="38" viewBox="0 0 70 38" role="img" aria-label="Логотип Круизы в Антарктику">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M.904 31.125l13.769-18.582 3.766 2.013L27.404 0l5.585 6.659 2.078-1.704 8.054 10.22 5.716-6.813 15.977 22.763L49.42 11.769l-2.338 8.13 2.143 6.426-13.769-18.97-.15 6.473 7.814 17.297-14.614-26.79 4.222 14.48-5.91-14.092-3.247 9.369.649-6.117L16.1 30.04l.974-9.291-3.377-3.716L.904 31.125z" fill="#F9FBFD"/><path fill-rule="evenodd" clip-rule="evenodd" d="M69.441 34.031C47.641 16.428 13.71 40.63 0 31.296c15.072 13.226 50.302-9.132 69.441 2.735z" fill="#F9FBFD"/><path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.416c-17.104-10.899-42.543 4.268-55.581.756 14.128 6.856 40.43-8.336 55.581-.756z" fill="#F9FBFD"/>
-        </svg>
-      </a>
-      <nav class="page-header__main-nav page-header__main-nav--no-js main-nav">
-        <button class="page-header__nav-toggle main-nav__toggle" aria-expanded="false" aria-controls="main-nav__list">
-          <svg class="main-nav__toggle-icon" aria-hidden="true">
-            <use class="main-nav__open-menu" xlink:href="img/sprite.svg#icon-open-menu"></use>
-            <use class="main-nav__close-menu" xlink:href="img/sprite.svg#icon-close-menu"></use>
+      <div class="page-header__inner">
+        <a>
+          <svg class="page-header__logo page-header__logo--no-js logo" width="70" height="38" viewBox="0 0 70 38" role="img" aria-label="Логотип Круизы в Антарктику">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M.904 31.125l13.769-18.582 3.766 2.013L27.404 0l5.585 6.659 2.078-1.704 8.054 10.22 5.716-6.813 15.977 22.763L49.42 11.769l-2.338 8.13 2.143 6.426-13.769-18.97-.15 6.473 7.814 17.297-14.614-26.79 4.222 14.48-5.91-14.092-3.247 9.369.649-6.117L16.1 30.04l.974-9.291-3.377-3.716L.904 31.125z" fill="#F9FBFD"/><path fill-rule="evenodd" clip-rule="evenodd" d="M69.441 34.031C47.641 16.428 13.71 40.63 0 31.296c15.072 13.226 50.302-9.132 69.441 2.735z" fill="#F9FBFD"/><path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.416c-17.104-10.899-42.543 4.268-55.581.756 14.128 6.856 40.43-8.336 55.581-.756z" fill="#F9FBFD"/>
           </svg>
-        </button>
-        <ul class="page-header__nav-list main-nav__list" id="main-nav__list">
-          <li class="main-nav__item"><a href="#advantages">Преимущества</a></li>
-          <li class="main-nav__item"><a href="#">Направления</a></li>
-          <li class="main-nav__item"><a href="#cruises">Ближайшие круизы</a></li>
-          <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
-        </ul>
-      </nav>
+        </a>
+        <nav class="page-header__main-nav page-header__main-nav--no-js main-nav">
+          <button class="page-header__nav-toggle main-nav__toggle" aria-expanded="false" aria-controls="main-nav__list">
+            <svg class="main-nav__toggle-icon" aria-hidden="true">
+              <use class="main-nav__open-menu" xlink:href="img/sprite.svg#icon-open-menu"></use>
+              <use class="main-nav__close-menu" xlink:href="img/sprite.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <ul class="page-header__nav-list main-nav__list" id="main-nav__list">
+            <li class="main-nav__item"><a href="#advantages">Преимущества</a></li>
+            <li class="main-nav__item"><a href="#">Направления</a></li>
+            <li class="main-nav__item"><a href="#cruises">Ближайшие круизы</a></li>
+            <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__text-wrapper">
+        <h1 class="page-header__title">Круизы в&nbsp;Антарктику</h1>
+        <p class="page-header__subtitle">Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
+      </div>
     </header>
     <main class="page-main page-main--no-js">
       <div class="page-main__banner-wrapper">
-        <div class="page-main__banner">
-          <h1 class="page-main__title">Круизы в&nbsp;Антарктику</h1>
-          <p class="page-main__subtitle">Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
-        </div>
       </div>
       <section class="page-main__intro intro">
         <div class="intro__text-wrapper">
@@ -83,7 +85,7 @@
       <section class="cruises" id="cruises">
         <h2 class="cruises__title">Ближайшие круизы</h2>
         <ul class="cruises__list">
-          <li class="cruises__item cruise">
+          <li class="cruises__item cruise" tabindex="0">
             <h3 class="cruise__title">Круиз &ldquo;Астория&rdquo;</h3>
             <div class="cruise__text-wrapper">
               <dl class="cruise__description">
@@ -115,7 +117,7 @@
               </picture>
             </div>
           </li>
-          <li class="cruises__item cruise">
+          <li class="cruises__item cruise" tabindex="0">
             <h3 class="cruise__title">Круиз &ldquo;Элайн&rdquo;</h3>
             <div class="cruise__text-wrapper">
               <dl class="cruise__description">
@@ -147,7 +149,7 @@
               </picture>
             </div>
           </li>
-          <li class="cruises__item cruise">
+          <li class="cruises__item cruise" tabindex="0">
             <h3 class="cruise__title">Круиз &ldquo;Атлантис&rdquo;</h3>
             <div class="cruise__text-wrapper">
               <dl class="cruise__description">
@@ -179,7 +181,7 @@
               </picture>
             </div>
           </li>
-          <li class="cruises__item cruise">
+          <li class="cruises__item cruise" tabindex="0">
             <h3 class="cruise__title">Круиз &ldquo;Одиссей&rdquo;</h3>
             <div class="cruise__text-wrapper">
               <dl class="cruise__description">
@@ -211,7 +213,7 @@
               </picture>
             </div>
           </li>
-          <li class="cruises__item cruise">
+          <li class="cruises__item cruise" tabindex="0">
             <h3 class="cruise__title">Круиз &ldquo;Олимпия&rdquo;</h3>
             <div class="cruise__text-wrapper">
               <dl class="cruise__description">
@@ -243,7 +245,7 @@
               </picture>
             </div>
           </li>
-          <li class="cruises__item cruise">
+          <li class="cruises__item cruise" tabindex="0">
             <h3 class="cruise__title">Круиз &ldquo;Аврора&rdquo;</h3>
             <div class="cruise__text-wrapper">
               <dl class="cruise__description">
@@ -275,7 +277,7 @@
               </picture>
             </div>
           </li>
-          <li class="cruises__item cruise">
+          <li class="cruises__item cruise" tabindex="0">
             <h3 class="cruise__title">Круиз &ldquo;Леонор&rdquo;</h3>
             <div class="cruise__text-wrapper">
               <dl class="cruise__description">
@@ -307,7 +309,7 @@
               </picture>
             </div>
           </li>
-          <li class="cruises__item cruise">
+          <li class="cruises__item cruise" tabindex="0">
             <h3 class="cruise__title">Круиз &ldquo;Минион - 1&rdquo;</h3>
             <div class="cruise__text-wrapper">
               <dl class="cruise__description">
