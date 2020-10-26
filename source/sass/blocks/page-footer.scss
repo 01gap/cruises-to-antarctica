@@ -8,7 +8,8 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  @media (max-width: $tablet-max-width) {
+  @media (max-width: 1067px) {
+    // padding-top: 48px;
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -31,11 +32,13 @@
 }
 
 .page-footer__main-nav {
-  margin-left: 40px;
-  align-self: center;
+  // margin-left: 40px;
+  // align-self: center;
+  margin-top: 8px;
 
   @media (max-width: $tablet-max-width) {
-    margin-left: 25px;
+    // margin-left: 25px;
+    margin-top: -5px;
   }
 
   @media (max-width: $mobile-max-width) {
@@ -55,5 +58,13 @@
     li + li {
       margin-left: 0;
     }
+  }
+}
+
+.page-footer__social {
+  padding-left: 40px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: -5px;
   }
 }

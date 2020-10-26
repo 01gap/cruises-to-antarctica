@@ -6,7 +6,7 @@
   padding-right: 103px;
 
   @media (min-width: $beyond-desktop-width) {
-    max-width: $desktop-max-width;
+    max-width: 1160px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -14,7 +14,7 @@
   @media (max-width: $tablet-max-width) {
     align-items: start;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -93,9 +93,14 @@
   width: 50%;
   box-sizing: border-box;
   padding-right: 68px;
-  align-self: center;
+  margin-top: 45px;
+
+  @media (max-width: 1200px) {
+    padding-right: 30px;
+  }
 
   @media (max-width: $tablet-max-width) {
+    margin-top: -5px;
     padding-right: 15px;
   }
 

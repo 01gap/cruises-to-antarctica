@@ -25,6 +25,10 @@
   opacity: 1;
 }
 
+// .form__checkbox-wrapper {
+
+// }
+
 .form__checkbox-wrapper label {
   position: relative;
   padding-left: 24px;
@@ -66,7 +70,8 @@
 }
 
 .form__checkbox-wrapper {
-  margin-bottom: 20px;
+  margin-top: -5px;
+  margin-bottom: 30px;
 
   @media (max-width: $mobile-menu-max-width) {
     display: flex;
@@ -91,8 +96,8 @@
   display: block;
   border: none;
   padding: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 12px;
   width: 303px;
   font-weight: 600;
   font-size: 14px;

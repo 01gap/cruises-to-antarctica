@@ -8,7 +8,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 70px;
+  padding-left: 40px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-left: 25px;
+  }
 }
 
 .main-nav__list a {

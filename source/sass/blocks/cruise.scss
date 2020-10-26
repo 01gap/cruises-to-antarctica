@@ -30,8 +30,8 @@
 .cruise__title {
   position: absolute;
   display: block;
-  bottom: 20px;
-  left: 35px;
+  bottom: 23px;
+  left: 30px;
   margin: 0;
   font-weight: 500;
   font-size: 18px;
@@ -39,7 +39,8 @@
   color: $basic-light;
 
   @media (max-width: $tablet-max-width) {
-    bottom: 25px;
+    bottom: 28px;
+    left: 35px;
   }
 
   @media (max-width: $mobile-max-width) {

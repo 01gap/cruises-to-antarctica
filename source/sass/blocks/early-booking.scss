@@ -1,7 +1,7 @@
 .early-booking {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
   min-height: 555px;
   background-image: url("../img/bg-early-booking-desktop.jpg");
   background-size: cover;
@@ -43,10 +43,27 @@
 
 .early-booking__inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  margin: 50px auto;
   padding-left: 60px;
   padding-right: 60px;
+  // padding-left: 163px;
+  // padding-right: 163px;
+  width: 1040px;
+  // min-width: 990px;
+
+  // @media (min-width: $beyond-desktop-width) {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
+
+  @media (max-width: 1300px) {
+       width: auto;
+  }
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
 
 
   @media (max-width: $tablet-max-width) {
@@ -63,16 +80,28 @@
 .early-booking__intro-inner {
   display: flex;
   flex-direction: column;
-  padding-right: 145px;
+  box-sizing: border-box;
+  width: 50%;
+  margin-top: 160px;
+  padding-right: 30px;
+
+  @media (min-width: $desktop-max-width) {
+    padding-right: 136px;
+  }
+
+  @media (max-width: 1200px) {
+    width: auto;
+  }
 
   @media (max-width: $tablet-max-width) {
     align-items: center;
     padding-right: 0;
-    margin-bottom: 50px;
+    margin-top: 35px;
+    margin-bottom: 52px;
     width: 420px;
   }
 
-  @media (max-width: $mobile-max-width) {
+  @media (max-width: $mobile-menu-max-width) {
     margin-bottom: 40px;
     width: 290px;
   }
@@ -82,20 +111,23 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
+  width: 495px;
   margin: 0;
-  margin-top: -10px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+
+  @media (max-width: 1200px) {
+    width: auto;
+  }
 
   @media (max-width: $tablet-max-width) {
     font-size: 34px;
     text-align: center;
-    margin: 0;
   }
 
   @media (max-width: $mobile-max-width) {
     font-size: 24px;
     line-height: 130%;
-    margin-top: -10px;
+    // margin-top: -10px;
     margin-bottom: 10px;
   }
 }
@@ -120,6 +152,16 @@
 .early-booking__form {
   background-color: $basic-dark;
   color: $basic-light;
+  width: 403px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-left: 8px;
+  }
+
+  @media (max-width: $mobile-menu-max-width) {
+    margin-left: 0;
+    width: 290px;
+  }
 }
 
 .early-booking__form-inner {
@@ -127,6 +169,7 @@
   flex-direction: column;
   box-sizing: border-box;
   padding: 50px;
+  padding-top: 43px;
 
   @media (max-width: $mobile-menu-max-width) {
     padding: 40px 30px;
@@ -136,7 +179,7 @@
 
 .early-booking__form-intro {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   width: 303px;
   font-weight: 500;
   font-size: 18px;
