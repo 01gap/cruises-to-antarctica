@@ -58,7 +58,7 @@
   }
 
   @media (max-width: $mobile-max-width) {
-    padding-top: 60px;
+    padding-top: 55px;
     padding-bottom: 30px;
     font-size: 24px;
   }
@@ -100,7 +100,6 @@
   padding-top: 81px;
   padding-bottom: 25px;
   margin-bottom: 40px;
-  // min-height: 241px;
 
   &::before {
     position: absolute;
@@ -127,6 +126,7 @@
 
   @media (max-width: $mobile-max-width) {
     width: auto;
+    margin-bottom: 32px;
   }
 }
 

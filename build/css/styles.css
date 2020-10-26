@@ -521,7 +521,7 @@ img {
     .page-header__text-wrapper {
       padding-left: 15px;
       padding-right: 15px;
-      padding-top: 180px; } }
+      padding-top: 130px; } }
 
 .page-header__title {
   margin: 0;
@@ -557,8 +557,8 @@ img {
     padding: 0; }
   .page-header__nav-toggle {
     position: absolute;
-    top: 20px;
-    right: 15px;
+    top: 18px;
+    right: 12px;
     display: block;
     width: 24px;
     height: 24px;
@@ -571,9 +571,11 @@ img {
   .page-header__logo {
     padding-left: 15px;
     padding-top: 20px; }
+  .main-nav__close-menu {
+    display: none; }
   .page-header--no-js {
-    background-position: 0 100px;
-    min-height: 949px; }
+    background-position: center 90px;
+    min-height: 807px; }
     .page-header--no-js .page-header__inner {
       min-height: 299px;
       background-color: #f9fbfd;
@@ -598,34 +600,42 @@ img {
         color: #011c40; }
     .page-header--no-js .main-nav__item + .main-nav__item {
       margin: 0;
-      margin-top: 25px; }
-    .page-header--no-js .page-header__logo {
-      padding-bottom: 50px; }
+      margin-top: 20px; }
     .page-header--no-js .main-nav__toggle {
       display: none; }
-  .page-header--menu-opened .page-header__logo {
-    padding-left: 15px;
-    padding-top: 20px;
-    padding-bottom: 40px; }
-    .page-header--menu-opened .page-header__logo path {
-      fill: #011c40; }
-  .page-header--menu-opened .main-nav__close-menu {
-    display: none; }
-  .page-header--menu-opened .page-header__main-nav {
-    align-self: flex-start;
-    padding-left: 15px;
-    padding-bottom: 60px; }
-  .page-header--menu-opened .page-header__nav-list {
-    display: flex;
-    min-width: 100%;
-    flex-direction: column; }
-    .page-header--menu-opened .page-header__nav-list a {
-      color: #011c40; }
-  .page-header--menu-opened .main-nav__item + .main-nav__item {
-    margin: 0;
-    margin-top: 20px; }
-  .page-header--menu-opened .main-nav__close-menu {
-    display: inline; } }
+    .page-header--no-js .page-header__text-wrapper {
+      padding-top: 180px; }
+  .page-header--menu-opened {
+    background-position: center 90px;
+    min-height: 807px; }
+    .page-header--menu-opened .page-header__inner {
+      min-height: 299px;
+      background-color: #f9fbfd;
+      z-index: 1; }
+    .page-header--menu-opened .page-header__logo {
+      padding-left: 15px;
+      padding-top: 20px;
+      padding-bottom: 40px; }
+      .page-header--menu-opened .page-header__logo path {
+        fill: #011c40; }
+    .page-header--menu-opened .page-header__main-nav {
+      align-self: flex-start;
+      padding-left: 15px;
+      padding-bottom: 60px; }
+    .page-header--menu-opened .page-header__nav-list {
+      display: flex;
+      min-width: 100%;
+      flex-direction: column;
+      padding-left: 0; }
+      .page-header--menu-opened .page-header__nav-list a {
+        color: #011c40; }
+    .page-header--menu-opened .main-nav__item + .main-nav__item {
+      margin: 0;
+      margin-top: 20px; }
+    .page-header--menu-opened .main-nav__close-menu {
+      display: inline; }
+    .page-header--menu-opened .page-header__text-wrapper {
+      padding-top: 180px; } }
 
 .page-footer {
   display: flex;
@@ -662,15 +672,16 @@ img {
   @media (max-width: 767px) {
     .page-footer__main-nav {
       margin-left: 0;
-      margin-top: 25px;
-      margin-bottom: 25px;
+      margin-top: 20px;
+      margin-bottom: 30px;
       font-size: 12px;
       line-height: 15px; } }
 
 @media (max-width: 767px) {
   .page-footer__nav-list {
     flex-direction: column;
-    align-items: flex-start; }
+    align-items: flex-start;
+    padding-left: 0; }
     .page-footer__nav-list li + li {
       margin-left: 0; } }
 
@@ -679,6 +690,9 @@ img {
   @media (max-width: 1023px) {
     .page-footer__social {
       margin-top: -5px; } }
+  @media (max-width: 767px) {
+    .page-footer__social {
+      padding-left: 0; } }
 
 .social {
   display: flex;
@@ -730,7 +744,7 @@ img {
     .intro {
       flex-direction: column;
       align-items: center;
-      margin-top: 65px;
+      margin-top: 66px;
       margin-bottom: 65px;
       padding-left: 15px;
       padding-right: 15px; } }
@@ -749,7 +763,7 @@ img {
       width: auto;
       height: 186px;
       padding-left: 0;
-      margin-top: 30px; } }
+      margin-top: 34px; } }
 
 .intro__photo {
   height: 301px;
@@ -793,10 +807,10 @@ img {
   margin-top: 45px; }
   @media (max-width: 1200px) {
     .intro__text-wrapper {
+      margin-top: -5px;
       padding-right: 30px; } }
   @media (max-width: 1023px) {
     .intro__text-wrapper {
-      margin-top: -5px;
       padding-right: 15px; } }
   @media (max-width: 767px) {
     .intro__text-wrapper {
@@ -853,7 +867,7 @@ img {
       line-height: 39px; } }
   @media (max-width: 767px) {
     .advantages__title {
-      padding-top: 60px;
+      padding-top: 55px;
       padding-bottom: 30px;
       font-size: 24px; } }
 
@@ -908,7 +922,8 @@ img {
         left: 20px; } }
   @media (max-width: 767px) {
     .advantages__item {
-      width: auto; } }
+      width: auto;
+      margin-bottom: 32px; } }
 
 .advantages__item--liner::before {
   top: 30px;
@@ -1005,7 +1020,7 @@ img {
   @media (max-width: 767px) {
     .cruises__title {
       font-size: 24px;
-      margin-bottom: 35px; } }
+      margin-bottom: 33px; } }
 
 .cruises__list {
   display: flex;
@@ -1226,6 +1241,7 @@ img {
       flex-direction: column; } }
   @media (max-width: 767px) {
     .early-booking__inner {
+      margin-top: 23px;
       padding-left: 15px;
       padding-right: 15px; } }
 
@@ -1251,7 +1267,7 @@ img {
       width: 420px; } }
   @media (max-width: 574px) {
     .early-booking__intro-inner {
-      margin-bottom: 40px;
+      margin-bottom: 36px;
       width: 290px; } }
 
 .early-booking__title {
@@ -1309,7 +1325,7 @@ img {
   @media (max-width: 574px) {
     .early-booking__form-inner {
       padding: 40px 30px;
-      padding-top: 30px; } }
+      padding-top: 35px; } }
 
 .early-booking__form-intro {
   margin: 0;
@@ -1458,7 +1474,8 @@ img {
     .contacts__text-wrapper {
       order: 0;
       width: auto;
-      padding-left: 0; } }
+      padding-left: 0;
+      margin-top: 0; } }
 
 .contacts__map-wrapper {
   width: 50%;
@@ -1473,7 +1490,7 @@ img {
     .contacts__map-wrapper {
       width: auto;
       padding-right: 0;
-      margin-top: 40px; } }
+      margin-top: 38px; } }
 
 .contacts__map {
   width: 560px;
@@ -1500,7 +1517,7 @@ img {
       margin-bottom: 28px; } }
   @media (max-width: 767px) {
     .contacts__intro {
-      margin-bottom: 20px; } }
+      margin-bottom: 28px; } }
 
 .contacts__address {
   position: relative;

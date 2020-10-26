@@ -90,7 +90,7 @@
   @media (max-width: $mobile-max-width) {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 180px;
+    padding-top: 130px;
   }
 }
 
@@ -128,7 +128,6 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  // general:
   .page-header__inner {
     flex-direction: column;
     align-items: flex-start;
@@ -137,8 +136,8 @@
 
   .page-header__nav-toggle {
     position: absolute;
-    top: 20px;
-    right: 15px;
+    top: 18px;
+    right: 12px;
     display: block;
     width: 24px;
     height: 24px;
@@ -157,10 +156,13 @@
     padding-top: 20px;
   }
 
-  // without js:
+  .main-nav__close-menu {
+    display: none;
+  }
+
   .page-header--no-js {
-    background-position: 0 100px;
-    min-height: 949px;
+    background-position: center 90px;
+    min-height: 807px;
 
     .page-header__inner {
       min-height: 299px;
@@ -198,20 +200,28 @@
 
     .main-nav__item + .main-nav__item {
       margin: 0;
-      margin-top: 25px;
-    }
-
-    .page-header__logo {
-      padding-bottom: 50px;
+      margin-top: 20px;
     }
 
     .main-nav__toggle {
       display: none;
     }
+
+    .page-header__text-wrapper {
+      padding-top: 180px;
+    }
   }
 
-   // with js:
   .page-header--menu-opened {
+    background-position: center 90px;
+    min-height: 807px;
+
+    .page-header__inner {
+      min-height: 299px;
+      background-color: $basic-light;
+      z-index: 1;
+    }
+
     .page-header__logo {
       padding-left: 15px;
       padding-top: 20px;
@@ -220,10 +230,6 @@
       path {
         fill: $basic-dark;
       }
-    }
-
-    .main-nav__close-menu {
-      display: none;
     }
 
     .page-header__main-nav {
@@ -236,6 +242,7 @@
       display: flex;
       min-width: 100%;
       flex-direction: column;
+      padding-left: 0;
 
       a {
         color: $basic-dark;
@@ -250,39 +257,9 @@
     .main-nav__close-menu {
       display: inline;
     }
+
+    .page-header__text-wrapper {
+      padding-top: 180px;
+    }
   }
-
-
-
-
-
-
-
-  // .page-header__main-nav--no-js {
-
-
-  //   .page-header__nav-list {
-  //     display: flex;
-  //     min-width: 100%;
-  //     flex-direction: column;
-  //     background-color: $basic-light;
-
-  //     a {
-  //       color: $basic-dark;
-  //     }
-  //   }
-
-  //   .main-nav__item + .main-nav__item {
-  //     margin: 0;
-  //     margin-top: 25px;
-  //   }
-
-  //   .page-header__logo {
-  //     padding-bottom: 50px;
-  //   }
-
-  //   .main-nav__toggle {
-  //     display: none;
-  //   }
-  // }
 }

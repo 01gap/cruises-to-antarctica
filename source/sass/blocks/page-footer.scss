@@ -9,7 +9,6 @@
   padding-bottom: 50px;
 
   @media (max-width: 1067px) {
-    // padding-top: 48px;
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -32,19 +31,16 @@
 }
 
 .page-footer__main-nav {
-  // margin-left: 40px;
-  // align-self: center;
   margin-top: 8px;
 
   @media (max-width: $tablet-max-width) {
-    // margin-left: 25px;
     margin-top: -5px;
   }
 
   @media (max-width: $mobile-max-width) {
     margin-left: 0;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     font-size: 12px;
     line-height: 15px;
   }
@@ -54,6 +50,7 @@
   @media (max-width: $mobile-max-width) {
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 0;
 
     li + li {
       margin-left: 0;
@@ -66,5 +63,9 @@
 
   @media (max-width: $tablet-max-width) {
     margin-top: -5px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-left: 0;
   }
 }
