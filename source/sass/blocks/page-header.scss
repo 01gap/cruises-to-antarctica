@@ -161,7 +161,8 @@
   }
 
   .page-header--no-js {
-    background-position: center 90px;
+    background-size: auto 638px;
+    background-position: bottom;
     min-height: 807px;
 
     .page-header__inner {
@@ -213,7 +214,8 @@
   }
 
   .page-header--menu-opened {
-    background-position: center 90px;
+    background-size: auto 638px;
+    background-position: bottom;
     min-height: 807px;
 
     .page-header__inner {
@@ -261,5 +263,14 @@
     .page-header__text-wrapper {
       padding-top: 180px;
     }
+  }
+}
+
+
+@media (max-width: $mobile-min-width) {
+  .page-header--menu-opened,
+  .page-header--no-js {
+    background-size: contain;
+    background-position: bottom;
   }
 }

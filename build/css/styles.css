@@ -574,7 +574,8 @@ img {
   .main-nav__close-menu {
     display: none; }
   .page-header--no-js {
-    background-position: center 90px;
+    background-size: auto 638px;
+    background-position: bottom;
     min-height: 807px; }
     .page-header--no-js .page-header__inner {
       min-height: 299px;
@@ -606,7 +607,8 @@ img {
     .page-header--no-js .page-header__text-wrapper {
       padding-top: 180px; }
   .page-header--menu-opened {
-    background-position: center 90px;
+    background-size: auto 638px;
+    background-position: bottom;
     min-height: 807px; }
     .page-header--menu-opened .page-header__inner {
       min-height: 299px;
@@ -636,6 +638,12 @@ img {
       display: inline; }
     .page-header--menu-opened .page-header__text-wrapper {
       padding-top: 180px; } }
+
+@media (max-width: 320px) {
+  .page-header--menu-opened,
+  .page-header--no-js {
+    background-size: contain;
+    background-position: bottom; } }
 
 .page-footer {
   display: flex;
