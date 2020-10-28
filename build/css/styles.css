@@ -337,6 +337,21 @@ template {
   src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/montserrat-v15-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v15-latin_cyrillic-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  background-color: #f9fbfd;
+  color: #011c40;
+  min-width: 320px;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -350,28 +365,6 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden; }
-
-.page {
-  height: 100%; }
-
-.page__body {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: normal;
-  text-transform: none;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  background-color: #f9fbfd;
-  color: #011c40;
-  min-width: 320px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
-  grid-template-rows: min-content 1fr min-content; }
 
 @media (max-width: 1023px) {
   .logo {
